@@ -7,11 +7,13 @@ using the graphviz tool.
 Installation
 ============
 
-Install the plugin via the subversion repository:
+Install the plugin via the subversion repository by executing the following
+command from the project root directory (branch 1.4 of the plugin works for
+both 1.3 and 1.4 symfony versions):
 
-    $ svn co http://svn.symfony-project.com/plugins/sfDoctrineGraphvizPlugin plugins/sfDoctrineGraphvizPlugin
+    $ svn co http://svn.symfony-project.com/plugins/sfDoctrineGraphvizPlugin/branches/1.4 plugins/sfDoctrineGraphvizPlugin
 
-from the project root directory or by using the command:
+or by using the default symfony plugin install command:
 
     $ ./symfony plugin:install sfDoctrineGraphvizPlugin
 

@@ -1,7 +1,7 @@
 <?php
 /*
  * This file is part of sfDoctrineGraphvizPlugin
- * (c) 2009 David PHAM-VAN, Dejan Spasic, Tomasz Ducin
+ * (c) 2009 Tomasz Ducin, David PHAM-VAN, Dejan Spasic
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
@@ -9,9 +9,9 @@
 
 /**
  * @package    sfDoctrineGraphvizPlugin
+ * @author     Tomasz Ducin <tomasz.ducin@gmail.com>
  * @author     David PHAM-VAN
  * @author     Dejan Spasic <spasic.dejan@yahoo.de>
- * @author     Tomasz Ducin <tomasz.ducin@gmail.com>
  * @version    SVN: $Id$
  */
 class doctrineGraphvizTask extends sfBaseTask
@@ -245,21 +245,21 @@ EOF;
 
     $digraphMCD = $this->genMCD();
     file_put_contents($baseMCDDir . '/' . self::MCD_SCHEMA_FILE, $digraphMCD);
-    $this->getFilesystem()->sh('dot ' . $baseMCDDir . '/' . self::MCD_SCHEMA_FILE . ' -Tpng -o' . $baseMCDDir . '/' . self::MCD_DOT_PNG_FILE);
-    $this->getFilesystem()->sh('neato ' . $baseMCDDir . '/' . self::MCD_SCHEMA_FILE . ' -Tpng -o' . $baseMCDDir . '/' . self::MCD_NEATO_PNG_FILE);
-    $this->getFilesystem()->sh('twopi ' . $baseMCDDir . '/' . self::MCD_SCHEMA_FILE . ' -Tpng -o' . $baseMCDDir . '/' . self::MCD_TWOPI_PNG_FILE);
-    $this->getFilesystem()->sh('circo ' . $baseMCDDir . '/' . self::MCD_SCHEMA_FILE . ' -Tpng -o' . $baseMCDDir . '/' . self::MCD_CIRCO_PNG_FILE);
-    $this->getFilesystem()->sh('fdp ' . $baseMCDDir . '/' . self::MCD_SCHEMA_FILE . ' -Tpng -o' . $baseMCDDir . '/' . self::MCD_FDP_PNG_FILE);
+    $this->getFilesystem()->execute('dot ' . $baseMCDDir . '/' . self::MCD_SCHEMA_FILE . ' -Tpng -o' . $baseMCDDir . '/' . self::MCD_DOT_PNG_FILE);
+    $this->getFilesystem()->execute('neato ' . $baseMCDDir . '/' . self::MCD_SCHEMA_FILE . ' -Tpng -o' . $baseMCDDir . '/' . self::MCD_NEATO_PNG_FILE);
+    $this->getFilesystem()->execute('twopi ' . $baseMCDDir . '/' . self::MCD_SCHEMA_FILE . ' -Tpng -o' . $baseMCDDir . '/' . self::MCD_TWOPI_PNG_FILE);
+    $this->getFilesystem()->execute('circo ' . $baseMCDDir . '/' . self::MCD_SCHEMA_FILE . ' -Tpng -o' . $baseMCDDir . '/' . self::MCD_CIRCO_PNG_FILE);
+    $this->getFilesystem()->execute('fdp ' . $baseMCDDir . '/' . self::MCD_SCHEMA_FILE . ' -Tpng -o' . $baseMCDDir . '/' . self::MCD_FDP_PNG_FILE);
 
     $this->logSection('graphviz', 'generating MLD');
 
     $digraphMLD = $this->genMLD();
     file_put_contents($baseMLDDir . '/' . self::MLD_SCHEMA_FILE, $digraphMLD);
-    $this->getFilesystem()->sh('dot ' . $baseMLDDir . '/' . self::MLD_SCHEMA_FILE . ' -Tpng -o' . $baseMLDDir . '/' . self::MLD_DOT_PNG_FILE);
-    $this->getFilesystem()->sh('neato ' . $baseMLDDir . '/' . self::MLD_SCHEMA_FILE . ' -Tpng -o' . $baseMLDDir . '/' . self::MLD_NEATO_PNG_FILE);
-    $this->getFilesystem()->sh('twopi ' . $baseMLDDir . '/' . self::MLD_SCHEMA_FILE . ' -Tpng -o' . $baseMLDDir . '/' . self::MLD_TWOPI_PNG_FILE);
-    $this->getFilesystem()->sh('circo ' . $baseMLDDir . '/' . self::MLD_SCHEMA_FILE . ' -Tpng -o' . $baseMLDDir . '/' . self::MLD_CIRCO_PNG_FILE);
-    $this->getFilesystem()->sh('fdp ' . $baseMLDDir . '/' . self::MLD_SCHEMA_FILE . ' -Tpng -o' . $baseMLDDir . '/' . self::MLD_FDP_PNG_FILE);
+    $this->getFilesystem()->execute('dot ' . $baseMLDDir . '/' . self::MLD_SCHEMA_FILE . ' -Tpng -o' . $baseMLDDir . '/' . self::MLD_DOT_PNG_FILE);
+    $this->getFilesystem()->execute('neato ' . $baseMLDDir . '/' . self::MLD_SCHEMA_FILE . ' -Tpng -o' . $baseMLDDir . '/' . self::MLD_NEATO_PNG_FILE);
+    $this->getFilesystem()->execute('twopi ' . $baseMLDDir . '/' . self::MLD_SCHEMA_FILE . ' -Tpng -o' . $baseMLDDir . '/' . self::MLD_TWOPI_PNG_FILE);
+    $this->getFilesystem()->execute('circo ' . $baseMLDDir . '/' . self::MLD_SCHEMA_FILE . ' -Tpng -o' . $baseMLDDir . '/' . self::MLD_CIRCO_PNG_FILE);
+    $this->getFilesystem()->execute('fdp ' . $baseMLDDir . '/' . self::MLD_SCHEMA_FILE . ' -Tpng -o' . $baseMLDDir . '/' . self::MLD_FDP_PNG_FILE);
   }
 }
 
