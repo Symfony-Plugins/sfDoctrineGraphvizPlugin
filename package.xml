@@ -106,10 +106,12 @@
      <api>beta</api>
     </stability>
     <license uri="http://www.symfony-project.org/license">MIT license</license>
-    <date>2009-12-19</date>
+    <date>2009-12-21</date>
     <license>MIT</license>
     <notes>
      * entire release by: Tomasz Ducin
+     * modified entire directory structure to be SVN-like
+     * created new branch for symfony version 1.4
      * added different image types for both MCD and MLD
      * readme extended
     </notes>
