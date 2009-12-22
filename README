@@ -24,12 +24,27 @@ Simply type the following command:
 
     $ ./symfony doctrine:graphviz
 
-Files are created in the directory _doc/graph/doctrine_. There are 4 files created:
+Files are created in two directories: _doc/graph/mcd_ and _doc/graph/mld_. The
+former one stores following files:
 
-*   **mcd.schema.dot** : source of *"Modèle conceptuel des données"*
-*   **mcd.schema.png** : image of *"Modèle conceptuel des données"*
-*   **mld.schema.dot** : source of *"Modèle logique des données"*
-*   **mld.schema.png** : image of *"Modèle logique des données"*
+    *   **mcd.schema.dot** : source of *"Modèle conceptuel des données"*
+    *   **mcd.dot.png** : _dot_ image of *"Modèle conceptuel des données"*
+    *   **mcd.neato.png** : _neato_ image of *"Modèle conceptuel des données"*
+    *   **mcd.twopi.png** : _twopi_ image of *"Modèle conceptuel des données"*
+    *   **mcd.circo.png** : _circo_ image of *"Modèle conceptuel des données"*
+    *   **mcd.fdp.png** : _fdp_ image of *"Modèle conceptuel des données"*
+
+while the latter one stores:
+
+    *   **mld.schema.dot** : source of *"Modèle logique des données"*
+    *   **mld.dot.png** : dot image of *"Modèle logique des données"*
+    *   **mld.neato.png** : neato image of *"Modèle logique des données"*
+    *   **mld.twopi.png** : twopi image of *"Modèle logique des données"*
+    *   **mld.circo.png** : circo image of *"Modèle logique des données"*
+    *   **mld.fdp.png** : fdp image of *"Modèle logique des données"*
+
+You can simply choose between many different images to choose the one that is
+the most readabe for you.
 
 Notes
 =====
