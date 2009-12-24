@@ -34,8 +34,8 @@
     <api>0.1.0</api>
   </version>
   <stability>
-    <release>stable</release>
-    <api>stable</api>
+    <release>beta</release>
+    <api>beta</api>
   </stability>
   <license uri="http://www.symfony-project.com/license">MIT</license>
   <notes>-</notes>
@@ -107,14 +107,16 @@
      <api>0.1.0</api>
     </version>
     <stability>
-     <release>stable</release>
-     <api>stable</api>
+     <release>beta</release>
+     <api>beta</api>
     </stability>
     <license uri="http://www.symfony-project.org/license">MIT license</license>
     <date>2009-12-24</date>
     <license>MIT</license>
     <notes>
-     * [Tomasz Ducin] fixed readme (markdown syntax)
+     * fixed readme markdown syntax (Tomasz Ducin)
+     * fixed package configuration (Tomasz Ducin)
+     * added support for inheritance (Bartlomiej Budzynski)
     </notes>
    </release>
 
@@ -124,8 +126,8 @@
      <api>0.1.0</api>
     </version>
     <stability>
-     <release>stable</release>
-     <api>stable</api>
+     <release>beta</release>
+     <api>beta</api>
     </stability>
     <license uri="http://www.symfony-project.org/license">MIT license</license>
     <date>2009-12-24</date>
