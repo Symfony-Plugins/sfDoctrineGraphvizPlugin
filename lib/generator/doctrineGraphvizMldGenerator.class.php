@@ -43,7 +43,7 @@ class doctrineGraphvizMldGenerator extends doctrineGraphvizGeneratorBase
       $table = Doctrine::getTable($modelName);
       $this->buffer .= sprintf(self::HT . "node%s [" . self::EOL .
         self::HT . self::HT . "label=\"{<table>%s|<cols>",
-        $table->name, $table->tableName);
+        $table->tableName, $table->tableName);
       foreach ($table->getColumns() as $name => $column)
       {
         $this->buffer .= sprintf("%s (%s)%s\l",
@@ -66,7 +66,7 @@ class doctrineGraphvizMldGenerator extends doctrineGraphvizGeneratorBase
         {
           $rel[] = sprintf(self::HT . "node%s:cols -> node%s:table [" . self::EOL .
             self::HT . self::HT . "label=\"%s=%s\"];",
-            $table->name, $relation->getTable()->name, $relation->getLocal(), $relation->getForeign());
+            $table->tableName, $relation->getTable()->tableName, $relation->getLocal(), $relation->getForeign());
         }
       }
     }

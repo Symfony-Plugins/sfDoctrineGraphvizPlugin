@@ -88,6 +88,19 @@ class doctrineGraphvizMcdGenerator extends doctrineGraphvizGeneratorBase
         }
       }
     }
+    
+    $inheritance = array();
+
+    foreach($modelNames as $modelName)
+    {
+      $table = Doctrine::getTable($modelName);
+      $options = $table->getOptions();
+      $parents = $options["parents"];
+      if (count($parents) > 2) 
+      {
+        $inheritance[]=array($modelName, $parents[count($parents)-2]);
+      }
+    }    
 
     foreach($modelNames as $modelName)
     {
@@ -181,7 +194,15 @@ class doctrineGraphvizMcdGenerator extends doctrineGraphvizGeneratorBase
         self::HT . self::HT . "arrowhead=normal ];" . self::EOL,
         $gen[0], $gen[1]);
     }
-
+    
+    foreach($inheritance as $inher)
+    {
+      $this->buffer .= sprintf(self::HT . "node%s -- node%s [" . self::EOL .
+        self::HT . self::HT . "arrowhead=normal ];" . self::EOL,
+        $inher[0], $inher[1]);
+    }
+    $this->buffer .= self::EOL;    
+    
     $this->buffer .= "}";
 
     return $this;
