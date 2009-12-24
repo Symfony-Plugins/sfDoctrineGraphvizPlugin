@@ -22,9 +22,15 @@
     <email>tomasz.ducin@gmail.com</email>
     <active>yes</active>
   </developer>
-  <date>2009-12-22</date>
+  <developer>
+    <name>Bartlomiej Budzynski</name>
+    <user>budzynski</user>
+    <email>b.budzynski@b2.com.pl</email>
+    <active>yes</active>
+  </developer>
+  <date>2009-12-24</date>
   <version>
-    <release>0.2.0</release>
+    <release>0.2.2</release>
     <api>0.1.0</api>
   </version>
   <stability>
@@ -95,6 +101,40 @@
   </phprelease>
 
   <changelog>
+   <release>
+    <version>
+     <release>0.2.2</release>
+     <api>0.1.0</api>
+    </version>
+    <stability>
+     <release>stable</release>
+     <api>stable</api>
+    </stability>
+    <license uri="http://www.symfony-project.org/license">MIT license</license>
+    <date>2009-12-24</date>
+    <license>MIT</license>
+    <notes>
+     * [Tomasz Ducin] fixed readme (markdown syntax)
+    </notes>
+   </release>
+
+   <release>
+    <version>
+     <release>0.2.1</release>
+     <api>0.1.0</api>
+    </version>
+    <stability>
+     <release>stable</release>
+     <api>stable</api>
+    </stability>
+    <license uri="http://www.symfony-project.org/license">MIT license</license>
+    <date>2009-12-24</date>
+    <license>MIT</license>
+    <notes>
+     * entire release by: Bartlomiej Budzynski
+     * added support for inheritance
+    </notes>
+   </release>
 
    <release>
     <version>
@@ -102,8 +142,8 @@
      <api>0.1.0</api>
     </version>
     <stability>
-     <release>stable</release>
-     <api>stable</api>
+     <release>beta</release>
+     <api>beta</api>
     </stability>
     <license uri="http://www.symfony-project.org/license">MIT license</license>
     <date>2009-12-22</date>

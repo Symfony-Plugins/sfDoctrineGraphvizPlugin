@@ -27,21 +27,21 @@ Simply type the following command:
 Files are created in two directories: _doc/graph/mcd_ and _doc/graph/mld_. The
 former one stores following files:
 
-    *   **mcd.schema.dot** : source of *"Modèle conceptuel des données"*
-    *   **mcd.dot.png** : _dot_ image of *"Modèle conceptuel des données"*
-    *   **mcd.neato.png** : _neato_ image of *"Modèle conceptuel des données"*
-    *   **mcd.twopi.png** : _twopi_ image of *"Modèle conceptuel des données"*
-    *   **mcd.circo.png** : _circo_ image of *"Modèle conceptuel des données"*
-    *   **mcd.fdp.png** : _fdp_ image of *"Modèle conceptuel des données"*
+  * __mcd.schema.dot__ : source of _"Modèle conceptuel des données"_
+  * __mcd.dot.png__ : _dot_ image of _"Modèle conceptuel des données"_
+  * __mcd.neato.png__ : _neato_ image of _"Modèle conceptuel des données"_
+  * __mcd.twopi.png__ : _twopi_ image of _"Modèle conceptuel des données"_
+  * __mcd.circo.png__ : _circo_ image of _"Modèle conceptuel des données"_
+  * __mcd.fdp.png__ : _fdp_ image of _"Modèle conceptuel des données"_
 
 while the latter one stores:
 
-    *   **mld.schema.dot** : source of *"Modèle logique des données"*
-    *   **mld.dot.png** : dot image of *"Modèle logique des données"*
-    *   **mld.neato.png** : neato image of *"Modèle logique des données"*
-    *   **mld.twopi.png** : twopi image of *"Modèle logique des données"*
-    *   **mld.circo.png** : circo image of *"Modèle logique des données"*
-    *   **mld.fdp.png** : fdp image of *"Modèle logique des données"*
+  * __mld.schema.dot__ : source of _"Modèle logique des données"_
+  * __mld.dot.png__ : dot image of _"Modèle logique des données"_
+  * __mld.neato.png__ : neato image of _"Modèle logique des données"_
+  * __mld.twopi.png__ : twopi image of _"Modèle logique des données"_
+  * __mld.circo.png__ : circo image of _"Modèle logique des données"_
+  * __mld.fdp.png__ : fdp image of _"Modèle logique des données"_
 
 You can simply choose between many different images to choose the one that is
 the most readabe for you.
