@@ -101,6 +101,7 @@
   </phprelease>
 
   <changelog>
+
    <release>
     <version>
      <release>0.2.3</release>
@@ -118,7 +119,6 @@
     </notes>
    </release>
 
-  <changelog>
    <release>
     <version>
      <release>0.2.2</release>
